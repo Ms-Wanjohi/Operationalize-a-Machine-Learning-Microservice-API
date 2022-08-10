@@ -41,11 +41,13 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube start
 ```
-### Running `app.py`
+### Running `app.py` and 
 
 1. Standalone:  `python app.py` - app.py contains the web app built using flask framework.
-2. Run in Docker:  `./run_docker.sh` - contains the script build docker image and run the app in the docker.
-3. Run in Kubernetes:  `./run_kubernetes.sh`
+2. Run in Docker:  `./run_docker.sh` - contains the script to build docker image and run the app in the docker.
+3. Run `./make_prediction.sh` - contains script for sending some input data to your containerized application to give a predicted value for the house price.
+4. Run `./upload_docker.sh` - Uploads image to docker
+4. Run in Kubernetes:  `./run_kubernetes.sh`
 
 ### Kubernetes Steps
 
