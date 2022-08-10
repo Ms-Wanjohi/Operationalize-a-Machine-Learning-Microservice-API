@@ -1,1 +1,4 @@
-<paste log output from Kubernetes-mediated prediction, here>
+NAME      READY   STATUS    RESTARTS   AGE
+devapi2   1/1     Running   0          17m
+Forwarding from 0.0.0.0:8000 -> 80
+Handling connection for 8000
