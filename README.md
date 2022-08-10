@@ -39,11 +39,12 @@ wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.
 # How I installed minikube for Linux:
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
+minikube start
 ```
 ### Running `app.py`
 
-1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
+1. Standalone:  `python app.py` - app.py contains the web app built using flask framework.
+2. Run in Docker:  `./run_docker.sh` - contains the script build docker image and run the app in the docker.
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
 ### Kubernetes Steps
