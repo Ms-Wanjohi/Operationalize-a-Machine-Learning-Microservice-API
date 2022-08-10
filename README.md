@@ -27,6 +27,18 @@ python3 -m venv ~/.devops
 source ~/.devops/bin/activate
 ```
 * Run `make install` to install the necessary dependencies. Note: Many project's dependencies are listed in requirements.txt file.
+* Use Docker to build and upload a containerized application. Verify you have docker installed by running docker --version.
+* Ensure  hadolint is installed
+# How I installed hadolint for linux
+wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.10.0/hadolint-Linux-x86_64
+* Type: make lint to run lint checks on the project code
+* Install minikube
+# How I installed minikube for Linux
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+
+
 
 ### Running `app.py`
 
