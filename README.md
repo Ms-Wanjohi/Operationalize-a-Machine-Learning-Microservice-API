@@ -27,13 +27,13 @@ python3 -m venv ~/.devops
 source ~/.devops/bin/activate
 ```
 * Run `make install` to install the necessary dependencies. Note: Many project's dependencies are listed in requirements.txt file.
-* Use Docker to build and upload a containerized application. Verify you have docker installed by running docker --version.
+* Use Docker to build and upload a containerized application. Verify you have docker installed by running `docker --version`.
 * Ensure  hadolint is installed
 ```bash
 # How I installed hadolint for linux:
 wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.10.0/hadolint-Linux-x86_64
 ```
-* Type: make lint to run lint checks on the project code
+* Type: `make lint` to run lint checks on the project code
 * Install minikube
 ```bash
 # How I installed minikube for Linux:
@@ -58,5 +58,5 @@ minikube start
 * Delete Kubernetes cluster by running: `minikube delete`
 
 ### CircleCI Integration
-* Create .circle ci folder and config.yml file to define an automated testing environment
-* In the CircleCI account Go to project settings and obtain the embedded code of status badge
+* Create .circle ci folder and config.yml file to define an automated testing environment.
+* In the CircleCI account, go to project settings and obtain the embedded code of status badge.
