@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Ms-Wanjohi/Operationalize-a-Machine-Learning-Microservice-API/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Ms-Wanjohi/Operationalize-a-Machine-Learning-Microservice-API/tree/main)
 
 ## Project Overview
  
@@ -41,7 +41,7 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 minikube start
 ```
-### Running `app.py` and 
+### Running `app.py` and verifying that application is running
 
 1. Standalone:  `python app.py` - app.py contains the web app built using flask framework.
 2. Run in Docker:  `./run_docker.sh` - contains the script to build docker image and run the app in docker.
@@ -55,3 +55,8 @@ minikube start
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+* Delete Kubernetes cluster by running: `minikube delete`
+
+### CircleCI Integration
+* Create .circle ci folder and config.yml file to define an automated testing environment
+* In the CircleCI account Go to project settings and obtain the embedded code of status badge
