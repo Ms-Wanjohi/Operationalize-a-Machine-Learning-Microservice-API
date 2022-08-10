@@ -47,7 +47,7 @@ minikube start
 2. Run in Docker:  `./run_docker.sh` - contains the script to build docker image and run the app in docker.
 3. Run `./make_prediction.sh` - contains script for sending some input data to your containerized application to give a predicted value for the house price.
 4. Run `./upload_docker.sh` - Uploads image to docker
-5. Run in Kubernetes:  `./run_kubernetes.sh` script that deploys app with Kubernetes.
+5. Run in Kubernetes:  `./run_kubernetes.sh` script that deploys app to run in Kubernetes.
 
 ### Kubernetes Steps
 
